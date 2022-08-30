@@ -24,7 +24,7 @@ pipeline {
 // 1.Compile the code (This should create an artifact)
          stage('Build') {
             steps {
-                
+                sh "chmod +x gradlew"
                 sh "./gradlew build"
 
             }
