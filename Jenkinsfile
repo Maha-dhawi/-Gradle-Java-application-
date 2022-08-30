@@ -6,7 +6,7 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
 
         AWS_S3_BUCKET = "gradle-maha"
-        ARTIFACT_NAME = "gradle-0.0.1-SNAPSHOT.jar"
+        ARTIFACT_NAME = "gradle-0.0.1-SNAPSHOT"
         AWS_EB_APP_NAME = "gradle-maha"
         AWS_EB_APP_VERSION = "${BUILD_ID}" // when you want to roll back
         AWS_EB_ENVIRONMENT = "Gradlemaha-env"
