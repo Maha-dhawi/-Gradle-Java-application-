@@ -16,7 +16,7 @@ pipeline {
         stage('Validate') {
             steps {
                 
-                sh "./gradlew.bat clean"
+                sh "./gradlew clean"
 
 
             }
@@ -25,7 +25,7 @@ pipeline {
          stage('Build') {
             steps {
                 
-                sh "./gradlew.bat build"
+                sh "./gradlew build"
 
             }
             post {
